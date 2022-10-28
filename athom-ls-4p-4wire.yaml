@@ -5,7 +5,7 @@ substitutions:
   project_version: "1.1"
   button_toggle: "true"
   light_restore_mode: RESTORE_DEFAULT_OFF
-  number_of_leds: '150'
+  number_of_leds: '300'
   led_chipset: WS2801
   led_rgb_order: GRB
 
