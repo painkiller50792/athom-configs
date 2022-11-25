@@ -79,7 +79,7 @@ power_supply:
     pin: GPIO12
 
 light:
-  - platform: fastled_clockless
+  - platform: neopixelbus
     pin: GPIO1
     id: leds
     name: "${friendly_name}"
@@ -91,6 +91,19 @@ light:
     effects:
       - addressable_rainbow:
       - addressable_scan:
+      
+    #platform: fastled_clockless
+    #pin: GPIO1
+    #id: leds
+    #name: "${friendly_name}"
+    #power_supply: relay
+    #chipset: ${led_chipset}
+    #num_leds: ${number_of_leds}
+    #rgb_order: ${led_rgb_order}
+    #restore_mode: ${led_restore_mode}
+    #effects:
+    #  - addressable_rainbow:
+    #  - addressable_scan:
 
 text_sensor:
   - platform: wifi_info
