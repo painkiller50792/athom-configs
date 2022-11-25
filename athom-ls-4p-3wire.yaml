@@ -86,7 +86,8 @@ light:
     power_supply: relay
     chipset: ${led_chipset}
     num_leds: ${number_of_leds}
-    rgb_order: ${led_rgb_order}
+    #rgb_order: ${led_rgb_order}
+    type: RGBW
     restore_mode: ${led_restore_mode}
     effects:
       - addressable_rainbow:
